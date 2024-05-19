@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StarRating extends StatefulWidget {
+class CustomStarRating extends StatefulWidget {
   final double rating;
   final Color? starColor;
   final double size;
@@ -11,8 +11,8 @@ class StarRating extends StatefulWidget {
   final IconData halfStar;
   final Function(double value)? onRatingChanged;
 
-  const StarRating({
-    Key? key,
+  const CustomStarRating({
+    super.key,
     this.rating = 4.0,
     this.starColor,
     this.size = 30.0,
@@ -22,13 +22,13 @@ class StarRating extends StatefulWidget {
     this.unfilledStar = Icons.star_border,
     this.halfStar = Icons.star_half,
     this.onRatingChanged,
-  }) : super(key: key);
+  });
 
   @override
-  _StarRatingState createState() => _StarRatingState();
+  _CustomStarRatingState createState() => _CustomStarRatingState();
 }
 
-class _StarRatingState extends State<StarRating> {
+class _CustomStarRatingState extends State<CustomStarRating> {
   late double _currentRating;
 
   @override

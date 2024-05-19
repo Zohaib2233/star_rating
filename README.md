@@ -26,7 +26,7 @@ start using the package.
 ### Import the package
 
 ```dart
-import 'package:star_rating/star_rating.dart';
+import 'package:star_rating/custom_star_rating.dart';
 ```
 
 
@@ -34,9 +34,10 @@ import 'package:star_rating/star_rating.dart';
 
 Here's a simple example to get you started:
 
+
 ```dart
 import 'package:flutter/material.dart';
-import 'package:star_rating/star_rating.dart';
+import 'package:star_rating/custom_star_rating.dart';
 
 void main() {
   runApp(MyApp());
